@@ -71,6 +71,21 @@ php artisan migrate
 To start the server on localhost:8000, use the following command:
 
 php -S localhost:8000 -t public
+### 8. Query Logging
+
+This Lumen API boilerplate includes an optional query logging feature in the authentication middleware, which allows you to log all database queries executed during a request. This can be useful for debugging and performance monitoring.
+
+When LOG_QUERIES is set to true, the middleware will log all executed queries for each authenticated request. This data is appended to the API response as a queries field, allowing you to inspect SQL statements and their bindings.
+
+### Enabling Query Logging
+
+To enable query logging, set the `LOG_QUERIES` environment variable to `true` in your `.env` file:
+
+```env
+LOG_QUERIES=true
+To start the server on localhost:8000, use the following command:
+
+php -S localhost:8000 -t public
 
 ## Additional Configuration
 
