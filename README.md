@@ -81,11 +81,9 @@ When LOG_QUERIES is set to true, the middleware will log all executed queries fo
 
 To enable query logging, set the `LOG_QUERIES` environment variable to `true` in your `.env` file:
 
-```env
+
 LOG_QUERIES=true
 To start the server on localhost:8000, use the following command:
-
-php -S localhost:8000 -t public
 
 ## Additional Configuration
 
